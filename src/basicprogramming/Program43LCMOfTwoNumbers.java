@@ -2,7 +2,7 @@ package basicprogramming;
 
 import java.util.Scanner;
 
-public class Program42GCDOfTwoNumbers {
+public class Program43LCMOfTwoNumbers {
     static int findGCD(int firstNumber, int secondNumber) {
         if(firstNumber == 0) return secondNumber;
         if(secondNumber == 0) return firstNumber;
@@ -16,6 +16,7 @@ public class Program42GCDOfTwoNumbers {
         System.out.println("Enter the two numbers: ");
         int firstNumber = input.nextInt();
         int secondNumber = input.nextInt();
-        System.out.println("The GCD of " + firstNumber + " and " + secondNumber + ": " + findGCD(firstNumber,secondNumber));
+        int GCD = findGCD(firstNumber,secondNumber);
+        System.out.println("The LCM of " + firstNumber + " and " + secondNumber + ": " + ((firstNumber * secondNumber)/GCD));
     }
 }
