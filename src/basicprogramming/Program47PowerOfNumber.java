@@ -9,6 +9,10 @@ public class Program47PowerOfNumber {
         int theNumber = input.nextInt();
         System.out.println("Enter exponent: ");
         int exponent = input.nextInt();
+        if(exponent == 0) {
+            System.out.println("The final answer: " + 1);
+            return;
+        }
         if(exponent == 1) {
             System.out.println("The final answer: " + theNumber);
             return;

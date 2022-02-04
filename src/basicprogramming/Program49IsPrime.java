@@ -15,7 +15,7 @@ public class Program49IsPrime {
             System.out.println("Prime Number");
             return;
         }
-        for(int i = 2;i<((theNumber) / 2);i++) {
+        for(int i = 2;i<=((theNumber) / 2);i++) {
             if (theNumber % i == 0) {
                 System.out.println("Composite Number");
                 return;
