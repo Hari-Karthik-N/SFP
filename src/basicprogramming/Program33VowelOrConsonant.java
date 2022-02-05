@@ -7,6 +7,13 @@ public class Program33VowelOrConsonant {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the character: ");
         char vowelOrConsonant = input.next().charAt(0);
-        System.out.println("The character is: " + ((vowelOrConsonant == 'a' || vowelOrConsonant == 'e' || vowelOrConsonant == 'i' || vowelOrConsonant == 'o' || vowelOrConsonant == 'u') || ((vowelOrConsonant == 'A' || vowelOrConsonant == 'E' || vowelOrConsonant == 'I' || vowelOrConsonant == 'O' || vowelOrConsonant == 'U')) ? "A Vowel" : "A Consonant"));
+        String vowels = "aeiouAEIOU";
+        for(int i = 0;i<vowels.length();i++) {
+            if(Character.toString(vowelOrConsonant).contains(Character.toString(vowels.charAt(i)))) {
+                System.out.println(vowelOrConsonant + " is a vowel");
+                return;
+            }
+        }
+        System.out.println(vowelOrConsonant + " is a consonant");
     }
 }

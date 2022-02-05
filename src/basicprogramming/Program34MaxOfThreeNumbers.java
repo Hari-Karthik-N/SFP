@@ -11,6 +11,7 @@ public class Program34MaxOfThreeNumbers {
         int secondNumber = input.nextInt();
         System.out.println("Enter Third Number: ");
         int thirdNumber = input.nextInt();
-        System.out.println("Largest of the three numbers: " + ((firstNumber > secondNumber) ? (firstNumber > thirdNumber) ? firstNumber : thirdNumber : (secondNumber > thirdNumber) ? secondNumber : thirdNumber));
+//        System.out.println("Largest of the three numbers: " + ((firstNumber > secondNumber) ? (firstNumber > thirdNumber) ? firstNumber : thirdNumber : (secondNumber > thirdNumber) ? secondNumber : thirdNumber));
+        System.out.println(Math.max(firstNumber, Math.max(secondNumber, thirdNumber)));
     }
 }
