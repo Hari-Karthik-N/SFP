@@ -11,7 +11,7 @@ public class Program26 {
         System.out.println("Enter sqft: ");
         int sqft = input.nextInt();
         System.out.println("Converting to miles from kilometers: " + (km*0.62171f));
-        System.out.println("Converting to fahrenheit from centigrade: " + (float)((centigrade * (9/5))+32));
-        System.out.println("Converting to acre from sqft: " + (double)(sqft/43560));
+        System.out.println("Converting to fahrenheit from centigrade: " + (float)(((float)centigrade * (float)(9/5))+ (float)32));
+        System.out.printf("Converting to acre from sqft: %.10f" , ((float)sqft/(float)43560));
     }
 }

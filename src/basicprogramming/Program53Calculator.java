@@ -49,7 +49,6 @@ public class Program53Calculator {
                     break;
                 default:
                     System.out.println("please choose a correct option");
-                    break;
             }
         }
 
