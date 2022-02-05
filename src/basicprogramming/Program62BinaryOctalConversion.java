@@ -3,6 +3,21 @@ package basicprogramming;
 import java.util.Scanner;
 
 public class Program62BinaryOctalConversion {
+    static boolean isOctalValid(int octal) {
+        String octalToString = Integer.toString(octal);
+        if(octalToString.contains("8") || octalToString.contains("9")) return false;
+        return true;
+    }
+
+    static boolean isBinaryValid(int binary) {
+        String check = "23456789";
+        String binaryToString = Integer.toString(binary);
+        for(int i = 0; i < check.length(); i++) {
+            if(binaryToString.contains(Character.toString(check.charAt(i)))) return false;
+        }
+        return true;
+    }
+
     static int octalTODecimal(int octal) {
         String octalString = Integer.toString(octal);
         int decimal = 0;
@@ -51,10 +66,18 @@ public class Program62BinaryOctalConversion {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the octal");
         int octal = input.nextInt();
+        if(!isOctalValid(octal)) {
+            System.out.println("Not a valid octal number!");
+            return;
+        }
         int decimal = octalTODecimal(octal);
         System.out.println("Octal to Binary: " + decimalToBinary(decimal));
         System.out.println("Enter the binary number: ");
         int binary = input.nextInt();
+        if(!isBinaryValid(octal)) {
+            System.out.println("Not a valid binary number!");
+            return;
+        }
         int decimalFromBinary = binaryToDecimal(binary);
         System.out.println("Binary to Octal: " + decimalToOctal(decimalFromBinary));
     }

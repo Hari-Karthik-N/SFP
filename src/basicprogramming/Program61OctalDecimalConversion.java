@@ -3,6 +3,11 @@ package basicprogramming;
 import java.util.Scanner;
 
 public class Program61OctalDecimalConversion {
+    static boolean isOctalValid(int octal) {
+        String octalToString = Integer.toString(octal);
+        if(octalToString.contains("8") || octalToString.contains("9")) return false;
+        return true;
+    }
     static int octalTODecimal(int octal) {
         String octalString = Integer.toString(octal);
         int decimal = 0;
@@ -29,6 +34,10 @@ public class Program61OctalDecimalConversion {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the Octal number");
         int octal = input.nextInt();
+        if(!isOctalValid(octal)) {
+            System.out.println("Not a valid octal number!");
+            return;
+        }
         System.out.println("Octal to Decimal: " + octalTODecimal(octal));
         System.out.println("Enter the Decimal number: ");
         int decimal = input.nextInt();
