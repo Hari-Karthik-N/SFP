@@ -12,7 +12,7 @@ public class Program39NumberFactorial {
         else {
             while(factorialNumber != 1) {
                 factorialNumberAnswer = factorialNumberAnswer * factorialNumber;
-                factorialNumber -= 1;
+                factorialNumber--;
             }
             System.out.println("Factorial: " + factorialNumberAnswer);
         }

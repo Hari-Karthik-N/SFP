@@ -8,15 +8,15 @@ public class Program35RootsOfQuadraticEquation {
         System.out.println("Enter x^2 Co-Efficient: ");
         int x2Coefficient = input.nextInt();
         System.out.println("Enter x Co-Efficient: ");
-        int xcoefficient = input.nextInt();
+        int xCoefficient = input.nextInt();
         System.out.println("Enter Constant: ");
         int constant = input.nextInt();
         if (x2Coefficient == 0) {
-            System.out.println("Factor: " + (-constant) + "/" + xcoefficient);
+            System.out.println("Factor: " + (-constant) + "/" + xCoefficient);
             return;
         }
-        int factor1 = ((-xcoefficient + (int)Math.sqrt((xcoefficient*xcoefficient) - (4*x2Coefficient*constant))) / 2*x2Coefficient);
-        int factor2 = ((-xcoefficient - (int)Math.sqrt((xcoefficient*xcoefficient) - (4*x2Coefficient*constant))) / 2*x2Coefficient);
+        int factor1 = ((-xCoefficient + (int)Math.sqrt((xCoefficient*xCoefficient) - (4*x2Coefficient*constant))) / 2*x2Coefficient);
+        int factor2 = ((-xCoefficient - (int)Math.sqrt((xCoefficient*xCoefficient) - (4*x2Coefficient*constant))) / 2*x2Coefficient);
         System.out.println("factors: " + factor1 + ", " + factor2);
     }
 }

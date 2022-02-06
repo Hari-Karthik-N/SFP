@@ -7,7 +7,7 @@ public class Program49IsPrime {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the Number: ");
         int theNumber = input.nextInt();
-        if(theNumber == 1) {
+        if(theNumber <= 1) {
             System.out.println("Composite number");
             return;
         }

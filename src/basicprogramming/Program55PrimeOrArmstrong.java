@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Program55PrimeOrArmstrong {
     static boolean isPrime(int theNumber) {
-        if(theNumber == 1) return false;
+        if(theNumber <= 1) return false;
         if(theNumber == 2) return true;
         for(int i = 2;i<=((theNumber) / 2);i++) {
             if (theNumber % i == 0) return false;
